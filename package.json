@@ -11,7 +11,7 @@
         "test-watch": "nodemon --exec 'npm test'",
         "unit-test": "mocha server/utils/*.test.js --timeout 1500",
         "code-coverage-test": "nyc --reporter=html --reporter=text  mocha server/utils/*.test.js --timeout 1500",
-        "e2etest": "testcafe puppeteer:no_sandbox server/testcafe/test.js -r spec,xunit:report.xml",
+        "e2etest": "testcafe chrome server/testcafe/test.js -r spec,xunit:report.xml",
         "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' http://localhost:3000",
         "test-mochaawesome": "mocha server/utils/*.test.js --reporter mochawesome"
     },
