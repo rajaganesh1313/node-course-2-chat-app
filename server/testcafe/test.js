@@ -3,13 +3,13 @@ import {
 } from 'testcafe'; // first import testcafe selectors
 
 fixture `Chat App End to End Testing` // declare the fixture
-    .page `http://localhost:3000`; // specify the start page
+    .page `https://rajachatapp.herokuapp.com/`; // specify the start page
 
 
 //then create a test and place your code there
 test('Login', async t => {
     await t
-        .typeText("[name='name']", "Chief Bogo")
+        .typeText("[name='name']", "James")
         .typeText("[name='room']", "1")
         .click('#join')
 
@@ -24,7 +24,7 @@ test
         await t
             .typeText("[name='message']", "Hey All")
             .pressKey('enter')
-            .typeText("[name='message']", "This is Chief Bogo!")
+            .typeText("[name='message']", "This is James!")
             .pressKey('enter')
             .typeText("[name='message']", "How is it going?!")
             .pressKey('enter')
