@@ -18,7 +18,7 @@ test('Login', async t => {
 });
 
 test
-    .page `http://localhost:3000/chat.html?name=Sam&room=1`
+    .page `https://rajachatapp.herokuapp.com/chat.html?name=James&room=1`
     ('Chat room entry', async t => {
         // Starts at http://devexpress.github.io/testcafe/blog/
         await t
