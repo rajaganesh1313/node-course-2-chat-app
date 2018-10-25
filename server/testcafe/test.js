@@ -11,7 +11,7 @@ test('Login', async t => {
     await t
         .typeText("[name='name']", "James")
         .typeText("[name='room']", "1")
-        .click('#join')
+        .click("#Join")
 
     // Use the assertion to check if the actual header text is equal to the expected one
     // .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
