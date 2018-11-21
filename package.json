@@ -14,7 +14,7 @@
         "e2etest": "testcafe chrome server/testcafe/test.js -r spec,xunit:report.xml",
         "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' http://localhost:3000",
         "test-mochaawesome": "mocha server/utils/*.test.js --reporter mochawesome"
-        "test" : "jest"
+        "test": "jest"
     },
     "engines": {
         "node": "9.5.0"
